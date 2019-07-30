@@ -1,0 +1,39 @@
+page{
+  height:100%;
+}
+
+.header{
+  height:auto;
+  width:100%;
+  text-align: center;
+  padding:50rpx 0;
+}
+
+.icon{
+  height:100rpx;
+  width:100rpx;
+  border-radius:100rpx;
+}
+
+.header .balance{
+  display: flex;
+  padding-top:20rpx;
+}
+
+.header .balance view{
+  flex:1;
+}
+
+.option{
+  margin-top:50rpx;
+}
+
+.option image{
+  width:60rpx;
+  height:60rpx;
+}
+
+.option .list{
+  display:flex;
+  padding:40rpx;
+}

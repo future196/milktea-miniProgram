@@ -1,0 +1,14 @@
+page{
+  background-color:	#F2F2F2;
+}
+
+.order_none{
+  text-align: center;
+}
+
+
+.order_none image{
+  width:30%;
+  margin-top:35vw;
+  margin-bottom: 20rpx;
+}

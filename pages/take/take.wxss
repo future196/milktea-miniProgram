@@ -1,0 +1,171 @@
+/* pages/take/take.wxss */
+page{
+  height:100%;
+  background-color: #DEDEDE;
+}
+
+.none{
+  height:90%;
+  width:650rpx;
+  background: white;
+  margin:5% 50rpx;
+  border-radius: 30rpx;
+  text-align: center;
+}
+
+.none image{
+  width:50%;
+  margin-top:25%;
+  margin-bottom: 20rpx;
+}
+
+.none .bottom navigator{
+  width:50%;
+  height:60rpx;
+}
+
+.none .bottom button{
+  width:100%;
+  height:100%;
+  background: #DBA86F;
+  color:white;
+  font-size:25rpx;
+}
+
+.none .bottom{
+  margin-top:200rpx;
+  padding-left:30%;
+}
+
+.none .bottom navigator{
+  font-size:25rpx;
+  margin:20rpx;
+}
+
+.scan{
+  width:80rpx;
+  height:80rpx;
+  background: white;
+  border-top-left-radius: 50rpx;
+  border-bottom-left-radius: 50rpx;
+  box-shadow:1px 0 5px 2px #EBEBEB;
+  position: fixed;
+  right:0;
+  bottom:30%;
+  z-index:100;
+}
+
+.scan image{
+  width:50%;
+  height:50%;
+  margin:25%;
+}
+
+.take-tea{
+  height:auto;
+  width:650rpx;
+  background: white;
+  margin:5% 50rpx;
+  border-top-left-radius: 30rpx;
+  border-top-right-radius: 30rpx;
+  text-align: center;
+  margin-bottom:0;
+}
+
+.take-tea image{
+  width:50rpx;
+  height:50rpx;
+}
+
+.take-tea view{
+  padding:10rpx;
+  justify-content:center;
+  padding-bottom:20rpx;
+  color:lightgrey;
+}
+
+.take-tea .wait{
+  height:50rpx;
+  background: #f7f7fa;
+  padding:10rpx 20rpx;
+  border-radius:60rpx;
+}
+
+.order_info{
+  width:650rpx;
+  margin-left:50rpx;
+  background: #f7f7fa;
+  margin-top:0;
+}
+
+.order_info .order_addr{
+  display: flex;
+  margin:40rpx;
+  border-bottom: 1px solid  #DEDEDE;
+  position:relative;
+}
+
+.order_info .order_addr .addr_text{
+  flex:3;
+  padding:40rpx 0;
+}
+
+.order_info .order_addr .addr_button{
+  flex:2
+}
+
+.order_info .order_addr .addr_button image{
+  width:80rpx;
+  height:80rpx;
+  padding:40rpx 10rpx;
+}
+
+.order_info .order_list .list_text{
+  flex:3;
+  padding:40rpx 0;
+}
+
+.order_info .order_list{
+  display: flex; 
+}
+
+.order_info .order_lists{
+  position: relative;
+  border-bottom: 1px dashed #DEDEDE;
+  margin:0 40rpx;
+}
+
+.order_info .order_list .list_number{
+  flex:2;
+  padding-top:60rpx;
+  color:black;
+}
+
+.order_price{
+  margin:0 40rpx;
+  padding:40rpx 0;
+  border-bottom: 1px solid #DEDEDE;
+  position: relative;
+}
+
+.order_price text{
+  font-size:1.1em;
+  color:black;
+}
+
+.order_info .order_message{
+  margin:0 40rpx;
+  padding:40rpx 0;
+}
+
+.order_info .order_message view{
+  font-size:25rpx;
+  padding:10rpx 0;
+}
+
+.radius{
+  background: #DEDEDE;
+  height:40rpx;
+  width:40rpx;
+  border-radius:40rpx;
+}

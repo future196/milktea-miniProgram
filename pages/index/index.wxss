@@ -1,0 +1,364 @@
+page{
+  height:100%;
+}
+
+.title_info{
+  margin:20rpx 0;
+}
+
+.title_info view{
+  font-size:25rpx;
+}
+
+button::after {
+  border: none
+}
+
+.empty{
+ position: absolute;
+ width:150rpx;
+ left:0;
+ bottom:0;
+ padding:10rpx 0;
+ background:grey;
+ color:white;
+ opacity: 0.5;
+}
+
+.active{
+  color: black;
+  background: white;
+  border-left:8rpx solid #DAA520;
+
+}
+.header .headerClass{
+  color: red;
+  margin-left: 20rpx;
+}
+.header .headerClass,
+.header .headerPin{
+  font-size: 28rpx;
+}
+.search{
+  display: flex;
+  height: 46rpx;
+  border-radius: 20rpx;
+  margin-left: 30rpx;
+  background-color:white;
+  width: 70%;
+}
+.search text{
+  color: gainsboro;
+  font-family: monospace;
+  font-size: 30rpx;
+  line-height: 46rpx;
+    
+}
+.search image{
+  padding-left:50rpx; 
+  width: 46rpx;
+  height: 46rpx;
+}
+.main{
+  display: flex;
+  margin-top:5rpx;
+}
+.left{
+  width: 25%;
+  background: #f7f7fa;
+}
+
+
+.left view{
+  padding: 30rpx 20rpx;
+  text-align: center;
+}
+.right{
+  width: 75%;  
+}
+
+ 
+.listItem2{
+  display: flex;
+  padding-bottom:60rpx;
+}
+.listItem .img{
+  width: 150rpx;
+  height: 150rpx;
+  text-align: center;
+  padding-top: 10rpx;
+}
+.listItem .img image{
+  width: 150rpx;
+  height: 150rpx;
+}
+.itemTitle{
+  padding:20rpx;
+  color:black;
+}
+.listItem .listText{
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rpx;
+  margin-left:20rpx;
+}
+.listItem .listText view{
+  display: flex;
+  align-items: flex-end;
+}
+.listItem .listText text{
+  font-size: 34rpx;
+  margin-top: 10rpx;
+}
+.listItem .listText .title{
+  color: black;
+}
+.listItem .listText .info{
+  letter-spacing: 3rpx;
+  color: #bfbfbf;
+  font-size: 25rpx;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.listItem .listText .bottom .money{
+  color: black;
+  font-size: 1.3em;
+  flex: 1;
+}
+
+.listItem .listText view text{
+  font-size: 28rpx;
+  color :silver;
+  margin-right: 60rpx;
+}
+
+.listText .bottom image{
+  width:50rpx;
+  height:50rpx;
+}
+
+.listText .bottom button{
+  background: #DBA86F;
+  color:white;
+  border-radius: 50rpx;
+}
+
+::-webkit-scrollbar
+{
+width: 6px;
+height: 6px;
+background-color: #ffffff;
+} 
+::-webkit-scrollbar-track{
+  height: 20rpx;
+  color: black;
+}
+
+.grey{
+  width:100%;
+  height:100%;
+  background: black;
+  position: fixed;
+  top:0;
+  left:0;
+  opacity: 0.5;
+}
+
+.detail{
+  background:white;
+  position: fixed;
+  top:20%;
+  left:10%;
+  width:80%;
+  height: auto;
+  border-radius:10rpx;
+}
+
+.detail .picture{
+  width:90%;
+  height:50vw;
+  padding:5%;
+}
+
+.detail .cancel{
+  width:40rpx;
+  height:40rpx;
+  position: absolute;
+  top:30rpx;
+  right:30rpx;
+}
+
+.detail .detail_info{
+  padding:30rpx;
+}
+
+.car{
+  position: fixed;
+  bottom:0;
+}
+
+.car .balance{
+  background: white;
+  display: flex;
+  height:100rpx;
+  width:750rpx;
+}
+
+
+.car .balance .balance_left{
+  height:100rpx;
+  flex:1;
+  font-size: 1.5em;
+  color:black;
+  display: flex;
+  background: lightgrey;
+}
+
+.car_content{
+  width:30%;
+  height:60rpx;
+  padding:10rpx;
+  background: white;
+  border-radius:50rpx;
+  text-align: center;
+  margin:10rpx;
+}
+
+.car .balance .balance_button{
+  height:100rpx;
+  width:30%;
+  background:	#DBA86F;
+  color:white;
+  font-size:40rpx;
+  border-radius:0;
+}
+
+.number_spot{
+  width:40rpx;
+  height:40rpx;
+  border-radius:40rpx;
+  background: #DBA86F;
+  border:1rpx solid white;
+  color:white;
+  position: absolute;
+  bottom:50rpx;
+  left:160rpx;
+}
+
+.car .del{
+  width:100%;
+  height:50rpx;
+  background:#f7f7fa;
+}
+
+.car .list{
+  height:150rpx;
+  width:750rpx;
+  background: white;
+  display: flex;
+}
+
+.car .list .text{
+  color:black;
+  flex: 1;
+  padding:55rpx 20rpx;
+}
+.car .list .price{
+  color:black;
+  padding:55rpx 20rpx;
+}
+.car .list .action{
+ display: flex;
+ padding-right:20rpx;
+}
+
+.car .list .action image{
+ width:50rpx;
+ height:50rpx;
+ padding-top:50rpx;
+}
+
+.spec{
+  background:white;
+  position: fixed;
+  top:20%;
+  left:10%;
+  width:80%;
+  height: auto;
+  border-radius:20rpx;
+}
+
+.spec .title{
+  color:black;
+  font-size: 1.2em;
+  text-align: center;
+  padding:20rpx 0;
+}
+
+
+.spec .cancel{
+  width:40rpx;
+  height:40rpx;
+  position: absolute;
+  top:30rpx;
+  right:30rpx;
+}
+
+
+.spec .bottom{
+  padding:10rpx 0;
+  display: flex;
+  background: #f7f7f7;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+  width:100%;
+}
+
+.spec .bottom .info{
+  width:52%;
+  padding-left:20rpx;
+}
+
+.spec .bottom .info .price{
+  font-size:1.2em;
+  color:black;
+}
+
+.spec .bottom .info .msg{
+  font-size:25rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+
+.spec .bottom .button .content{
+  width:210rpx;
+  height:60rpx;
+  padding:10rpx;
+  background: #DBA86F;
+  border-radius:10rpx;
+  text-align: center;
+  margin:10rpx;
+  color:white;
+  display: flex;
+}
+
+.spec_option{
+  padding:20rpx;
+}
+
+.spec_option view view{
+  background: #DBA86F;
+  color:white;
+  border-radius: 50rpx;
+  padding:10rpx 20rpx;
+  float:left;
+  margin:20rpx 10rpx 0 0;
+}

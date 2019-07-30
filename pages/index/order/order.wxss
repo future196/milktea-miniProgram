@@ -1,0 +1,155 @@
+page{
+  height:100%;
+  background-color: #F7F7F7;
+  margin-bottom: 100rpx;
+}
+
+.shop{
+  display: flex;
+}
+
+.shop text{
+  font-size:1.2em;
+  color:black;
+}
+
+.shop image{
+  height: 40rpx;
+  width:40rpx;
+  padding-top:5rpx;
+}
+
+.take{
+  display: flex;
+  padding-top:30rpx;
+}
+
+.take image{
+  height: 30rpx;
+  width:30rpx;
+  padding-top:5rpx;
+}
+
+.telephone{
+  display: flex;
+  margin-top:20rpx;
+  background: white;
+  padding:20rpx 30rpx;
+}
+
+.telephone image{
+  height: 30rpx;
+  width:40rpx;
+  padding-top:5rpx;
+}
+
+.telephone button{
+  color:#DBA86F;
+  border:1rpx solid #DBA86F;
+  background: white;
+}
+
+.info{
+  background: white;
+  margin-top:20rpx;
+  padding:20rpx 30rpx;
+}
+
+.info .order_lists{
+  padding:30rpx 0;
+}
+
+.info .order_list{
+  display: flex; 
+}
+
+.info .order_list .list_text{
+  flex:3;
+}
+
+
+.info .order_list .list_number{
+  flex:1;
+  padding:30rpx 40rpx;
+  color:black;
+}
+
+
+.ticket{
+  display: flex;
+  background: white;
+  padding:20rpx 0;
+  border-top:1rpx solid 	#CCCCCC;
+  border-bottom:1rpx solid 	#CCCCCC;
+}
+
+.ticket image{
+  height: 40rpx;
+  width:40rpx;
+  padding-top:5rpx;
+}
+
+.money{
+  display: flex;
+  background: white;
+  margin-top:20rpx;
+  padding:20rpx 30rpx;
+}
+
+.pay_mode{
+  display: flex;
+  background: white;
+  margin-top:20rpx;
+  padding:20rpx 30rpx;
+}
+
+.pay_mode text{
+  color:black;
+}
+
+.pay_mode image{
+  height: 30rpx;
+  width:30rpx;
+  padding-top:5rpx;
+}
+
+.remarks{
+  display: flex;
+  color:black;
+  background: white;
+  margin-top:20rpx;
+  padding:20rpx 30rpx;
+}
+
+.remarks image{
+  height: 30rpx;
+  width:30rpx;
+  padding-top:5rpx;
+}
+
+.pay{
+  display: flex;
+  height:90rpx;
+  width:100%;
+  background: white;
+  position: fixed;
+  bottom:0;
+  border:1rpx solid #F7F7F7;
+}
+
+.pay text{
+  flex:1;
+  font-size:1.2em;
+  color:black;
+  line-height: 90rpx;
+  padding-left: 20rpx;
+}
+
+.pay button{
+  width:250rpx;
+  height:100%;
+  font-size:1.2em;
+  color:white;
+  background:#DBA86F;
+  border-radius: 0;
+}

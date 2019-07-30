@@ -1,0 +1,60 @@
+page{
+  height:100%;
+  background: #f7f7f7;
+}
+.main{
+  background: #f7f7fa;
+}
+.store{
+  display: flex;
+  padding: 20rpx 30rpx;
+  background: white;
+  margin-top:30rpx;
+}
+.store view{
+  display: flex;
+}
+.store .title{
+  flex:1;
+  color:black;
+}
+
+.store view image{
+  width:30rpx;
+  height:30rpx;
+}
+
+.store view text{
+  font-size:25rpx;
+}
+
+.order_list{
+  width:100%;
+  display: table-cell;
+  padding:0 20rpx;
+}
+
+.order_list image{
+  float:left;
+  width:80rpx;
+  height:80rpx;
+  padding:20rpx;
+}
+
+.info{
+  display: flex;
+  background: white;
+  padding:30rpx;
+}
+
+.info .msg{
+  flex:1;
+}
+.info .msg view{
+  font-size:25rpx;
+}
+.info .price text{
+  margin-top:30rpx;
+  font-size:1.2em;
+  color:black;
+}

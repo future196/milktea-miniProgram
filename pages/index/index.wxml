@@ -1,0 +1,198 @@
+<view style='height:{{title_height}};display:fiexd;box-shadow:1px 1px 1px 2px	#FAFAFA;'>
+  <view style='display:flex'>
+    <view style='padding-left:5%;flex:1'>
+      <navigator url='store/store' style='color:black;line-height:60rpx;'>
+        广州汉溪长隆GO店
+        <image src='../../imgs/right.png' style='width:20rpx;height:20rpx;'></image>
+      </navigator>
+    </view>
+    <view style='margin-right:5%;background:#F0F0F0;width:200rpx;height:60rpx;border-radius:60rpx;border:1px solid	#DEDEDE'>
+      <button style='background:black;width:91rpx;height:50rpx;border-radius:60rpx;color:white;white-space:nowrap;border:0;float:left;margin:5rpx;'>自取</button>
+      <button style='background:#F0F0F0;width:91rpx;height:50rpx;border-radius:60rpx;color:#bfbfbf;white-space:nowrap;float:right;margin:5rpx;'>外卖</button>
+    </view>
+  </view>
+  <view style='display:flex;padding:20rpx 0;'>
+    <view style='font-size:25rpx;padding-left:5%;flex:1;line-height:50rpx;'>距离您4.1km</view>
+    <view style='font-size:20rpx;margin-right:5%;line-height:50rpx;' bindtap='more_info'>
+      更多门店信息
+      <image src='../../imgs/down.png' style='width:20rpx;height:20rpx;'></image>
+    </view>
+  </view>
+  <view wx:if="{{title_height=='100%'}}" style='margin:5%'>
+    <view>
+      <view style='color:black'>配送</view>
+      <view class='title_info'>
+        <view>满40起送</view>
+        <view>配送费5元</view>
+        <view>配送范围 距门店3000m内</view>
+        <view>由顺丰提供配送服务</view>
+      </view>
+    </view>
+    <view>
+      <view style='color:black'>门店信息</view>
+      <view class='title_info'>
+        <view>地址：广州市番禺区汉溪村汉溪商业中心汉溪中路16号</view>
+        <view>电话:020-3545485</view>
+        <view>营业时间：10：00-22：00</view>
+      </view>
+    </view>
+  </view>
+  
+
+</view>
+
+
+
+
+
+<view class='main' wx:if="{{title_height=='150rpx'}}">
+
+  <view class='left'>
+
+    <scroll-view scroll-y="true" style="height: 1100rpx" scroll-into-view="true" scroll-with-animation="true">
+
+      <block wx:for="{{leftText}}" wx:for-list="item">
+
+        <view class="{{classfiySelect == item.id?'active':''}}" data-id='{{item.id}}' bindtap='left_list'>
+
+          <text>{{item.text1}}</text>
+
+        </view>
+
+      </block>
+
+    </scroll-view>
+
+  </view>
+
+  <view class='right'>
+
+    <scroll-view scroll-y="true" style="height: 1100rpx" bindscroll="scroll" scroll-top="{{scrollTop}}" scroll-into-view="{{'inToview'+rigId}}" scroll-with-animation="true">
+
+      <block wx:for="{{rightData}}" wx:for-list="item"  wx:for-index="type_index">
+        <view class='itemTitle' id="{{'inToview'+item.id}}">{{item.title}}</view>
+
+        <view bindtap='particulars' class='listItem' data-id='{{item.id}}'>
+
+          <block wx:for="{{item.frist}}" wx:for-index="produce_index" >
+
+            <view class='listItem2' data-text="{{}}" >
+
+              <view class='img' data-type="{{ type_index }}" data-produce="{{ produce_index }}" bindtap="produce_detail">
+
+                <image src='{{item.url}}' style='position: relative;'>
+                  <text wx:if="{{ item.status == 0 }}" class='empty'>已售罄</text>
+                </image>
+
+              </view>
+
+              <view class='listText'>
+
+                <text class='title' data-type="{{ type_index }}" data-produce="{{ produce_index }}" bindtap="produce_detail">{{item.text}}</text>
+
+                <text class='info' data-type="{{ type_index }}" data-produce="{{ produce_index }}" bindtap="produce_detail">{{item.info}}</text>
+
+                <view class='bottom'>
+                  <text class='money'>¥{{item.money}}</text>   
+                  <view wx:if='{{ item.number > 0 }}'>
+                    <image src='../../imgs/minus.png' data-type="{{ type_index }}" data-produce="{{ produce_index }}" bindtap='minus'></image>
+                    <text style='margin:0 10rpx;color:black;font-size:35rpx;'>{{ item.number }}</text>
+                  </view>
+                  <image src='../../imgs/add.png' data-type="{{ type_index }}" data-produce="{{ produce_index }}" bindtap='add'></image>
+                  <button>选规格</button>
+                </view>
+
+
+              </view>
+
+            </view>
+
+          </block>
+
+        </view>
+
+      </block>
+
+    </scroll-view>
+
+  </view>
+
+</view>
+
+
+<!-- 遮罩层 -->
+<view id='grey' class='grey' wx:if="{{grey}}"></view>
+
+<!-- 产品详情弹出框 -->
+<view id='detail' class='detail' wx:if="{{detail_show}}">
+  <image class='cancel' bindtap='detail_cancel' src='../../imgs/cancel.png'></image>
+  <image class='picture' src='../../imgs/tea.png'></image>
+  <view class='detail_info'>
+    <view>{{produce_detail.title}}</view>
+    <text style='font-size:25rpx;color:#bfbfbf;'>{{produce_detail.info}}</text>
+    <view>￥{{produce_detail.price}}</view>
+  </view>
+</view>
+
+<!-- 选规格弹窗 -->
+<view class='spec' hidden='hidden'>
+  <view class='title'>绿研</view>
+  <image class='cancel' bindtap='detail_cancel' src='../../imgs/cancel.png'></image>
+  <view class='spec_option'>
+    <text>规格</text>
+    <view>
+      <view>芝士</view>
+      <view>轻芝士</view>
+    </view>
+  </view>
+  <view class='bottom'>
+    <view class='info'>
+      <view class='price'>￥19</view>
+      <view class='msg'>芝士芝士芝士芝士芝士芝士芝士芝士士芝士芝</view>
+    </view>
+    <view class='button'>
+      <view class='content'>     
+        <image src='../../imgs/bag_white.png' style='width:40rpx;height:40rpx;margin-top:10rpx;'></image>
+        <text style='margin:10rpx;'>加入购物袋</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 购物车 -->
+<view class='car' wx:if="{{bag.number>0}}">
+  <view class='del' wx:if="{{bag_detail_show}}">
+    <view style='padding-left:20rpx;'>
+      <image style='width:30rpx;height:30rpx;' src='../../imgs/del.png'></image>
+      <text bindtap='del_bag'>清空购物袋</text>
+    </view>  
+  </view>
+  <view wx:if="{{bag_detail_show}}">
+    <block wx:for="{{rightData}}" wx:for-index="type_index">
+    <block wx:for="{{item.frist}}" wx:for-index="produce_index">
+      <view class='list' wx:if="{{item.number>0}}">
+        <text class='text'>{{item.text}}</text>
+        <text class='price'>￥{{item.money*item.number}}</text>
+        <view class='action'>
+          <image src='../../imgs/minus.png' data-type="{{ type_index }}" data-produce="{{ produce_index }}" bindtap='minus'></image>
+          <text style='margin:55rpx 10rpx;color:black;font-size:35rpx;'>{{item.number}}</text>
+          <image src='../../imgs/add.png' data-type="{{ type_index }}" data-produce="{{ produce_index }}" bindtap='add'></image>
+        </view>
+      </view>
+    </block>
+    </block>
+  </view>
+  
+  <view class='balance'>
+    <view class='balance_left'>
+    <view class='car_content' bindtap='bag_show'>     
+      <image src='../../imgs/bag.png' style='width:40rpx;height:40rpx;'></image>
+      购物袋     
+      <view wx:if="{{bag.number>0}}" class='number_spot'>{{bag.number}}</view>
+    </view>
+    <text style='flex:1'></text>
+    <text style='margin:20rpx;'>￥{{bag.price}}</text>
+    </view>
+    <button bindtap='order' class='balance_button'>结算</button>
+  </view>
+</view>

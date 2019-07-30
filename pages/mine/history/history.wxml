@@ -1,0 +1,47 @@
+<view class='main'>
+  <view class='store'>
+    <view class='title'>广州汉溪长隆GO店</view>
+    <view>
+      <text>已完成</text>
+      <image src='../../../imgs/right.png' style='margin:0'></image>
+    </view>
+  </view>
+  <view class='order_list'>
+    <image src='../../../imgs/icon.png'></image>
+    <image src='../../../imgs/icon.png'></image>
+    <image src='../../../imgs/icon.png'></image>
+  </view>
+  <view class='info'>
+    <view class='msg'>
+      <view>订单编号：5961265128545118</view>
+      <view>下单时间：2019-04-12 12:32:45</view>
+    </view>
+    <view class='price'>
+      <text>￥82</text>
+    </view>
+  </view>
+</view>
+
+<view class='main'>
+  <view class='store'>
+    <view class='title'>广州汉溪长隆GO店</view>
+    <view>
+      <text>已完成</text>
+      <image src='../../../imgs/right.png' style='margin:0'></image>
+    </view>
+  </view>
+  <view class='order_list'>
+    <image src='../../../imgs/icon.png'></image>
+    <image src='../../../imgs/icon.png'></image>
+    <image src='../../../imgs/icon.png'></image>
+  </view>
+  <view class='info'>
+    <view class='msg'>
+      <view>订单编号：5961265128545118</view>
+      <view>下单时间：2019-04-12 12:32:45</view>
+    </view>
+    <view class='price'>
+      <text>￥82</text>
+    </view>
+  </view>
+</view>

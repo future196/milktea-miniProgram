@@ -1,0 +1,8 @@
+view{
+  font-size: 30rpx;
+  color:grey
+}
+
+button{
+  font-size: 20rpx
+}

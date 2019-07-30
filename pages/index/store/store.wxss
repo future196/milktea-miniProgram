@@ -1,0 +1,88 @@
+page{
+  height:100%;
+  background-color: #f7f7f7;
+}
+
+.addr{
+  display: flex;
+  padding:30rpx;
+  background: white;
+}
+
+.addr text{
+  display: flex;
+  padding:10rpx;
+}
+
+.addr image{
+  width:30rpx;
+  height:30rpx;
+}
+
+.addr .search{
+  background: #f7f7f7;
+  border-radius: 50rpx;
+  height:70rpx;
+  /* width:150rpx; */
+  display: flex;
+}
+
+.addr .search image{
+  height: 30rpx;
+  width:30rpx;
+  padding:20rpx;
+}
+
+.addr .search input{
+  flex:3;
+  height: 70rpx;
+}
+
+.map{
+  height:500rpx;
+  width:100%;
+  background: pink;
+}
+
+.store_list{
+  display: flex;
+  background: white;
+  padding:30rpx;
+  margin:30rpx;
+  border-radius:10rpx;
+}
+
+.store_list .info{
+  flex:3;
+  border-right: 5rpx solid #f7f7f7;
+  padding-right:20rpx;
+}
+
+.store_list .info .name{
+  color:black;
+  font-size:1.1em;
+}
+
+.store_list .info text{
+  font-size:25rpx;
+  margin:5rpx;
+}
+
+.store_list .info view{
+  font-size:25rpx;
+  margin:5rpx;
+}
+
+.store_list .action{
+  flex:1;
+}
+
+
+
+.store_list .info .name text{
+  font-size:25rpx;
+  border:1rpx solid #D4D4D4;
+  padding:1rpx 5rpx;
+  border-radius: 20rpx;
+  margin-left: 10rpx;
+}

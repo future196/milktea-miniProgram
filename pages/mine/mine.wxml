@@ -1,0 +1,27 @@
+<view class='header' style="background-image: url('../../imgs/background2.png');background-size:100% 100%;">
+  <image class='icon' mode='widthFix' src='../../imgs/icon.png'></image>
+  <view style='font-size:40rpx;'>想着想着就忘了</view>
+  <view class='balance'>
+    <view>
+      <view style='font-size:40rpx;'>0</view>
+      <view>积分</view>
+    </view>
+    <view>
+      <view style='font-size:40rpx;'>0</view>
+      <view>喜茶券</view>
+    </view>
+  </view>
+</view>
+
+<view class='option'>
+  <view class='list' bindtap='history'>
+    <image src='../../imgs/mine_order.png'></image>
+    <text style='font-size:35rpx;flex:1;padding:10rpx;'>历史订单</text>
+    <!-- <text style='color:lightgrey;padding-top:10rpx;'>请完善资料</text> -->
+  </view>
+  <view class='list' bindtap='personal_info'>
+    <image src='../../imgs/info.png'></image>
+    <text style='font-size:35rpx;flex:1;padding:10rpx;'>个人资料</text>
+    <text style='color:lightgrey;padding-top:10rpx;'>请完善资料</text>
+  </view>
+</view>

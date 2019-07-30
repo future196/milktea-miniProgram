@@ -1,0 +1,4 @@
+<view class='order_none'>
+  <image src='../../../../imgs/take.png' mode='widthFix'></image>
+  <view>没有购买记录</view>
+</view>

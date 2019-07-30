@@ -1,0 +1,75 @@
+<view style='padding:30rpx;background:white;'>
+  <view class='shop'>
+    <text> 广州汉溪长隆GO店</text>
+    <image src='../../../imgs/right.png'></image>
+  </view>
+  <text style='font-size:25rpx;'>距离您500米，请确认下单门店是否正确</text>
+  <view class='take'>
+    <text style='color:black;flex:1;'>立即取茶</text>
+    <text style='font-size:25rpx;'>6个订单在制作中，预算等待15分钟</text>
+    <image src='../../../imgs/right.png'></image>
+  </view>
+</view>
+
+<view class='telephone'>
+  <image src='../../../imgs/mobile_phone.png'></image>
+  <text style='font-size:30rpx;color:black;flex:1;'>1597665466</text>
+  <button>立即填写</button>
+</view>
+
+<view class='info'>
+  <view style='border-bottom:1rpx solid #CCCCCC;padding:10rpx 0;'>商品明细</view>
+  <view class='order_lists'>
+    <view class='order_list'>
+      <view class='list_text'>
+        <view style='color:black;'>波波冰淇淋</view>
+        <text style='font-size:20rpx;'>多黑糖</text>
+      </view>
+      <view class='list_number'>
+        <text>x1</text>
+        <text style='padding-left:60rpx;'>￥16</text>
+      </view>
+    </view>
+    <view class='order_list'>
+      <view class='list_text'>
+        <view style='color:black;'>多肉莓莓</view>
+        <text style='font-size:20rpx;'>标准(推荐)，少糖,轻芝士(推荐），正常冰（推荐）</text>
+      </view>
+      <view class='list_number'>
+        <text>x1</text>
+        <text style='padding-left:60rpx;'>￥16</text>
+      </view>
+    </view>    
+  </view>
+  <view class='ticket'>
+    <text style='color:black;'>喜茶券</text>
+    <image src='../../../imgs/ticket.png'></image>
+    <text style='flex:1;'></text>
+    <text>暂无可用</text>
+    <image style='width:30rpx;height:30rpx;' src='../../../imgs/right.png'></image>
+  </view>
+  <view class='money'>
+    <text style='flex:1;'></text>
+    <text>共2件商品，小计：</text>
+    <text style='color:black;'>￥32</text>
+  </view>
+</view>
+
+<view class='pay_mode'>
+  <text style='flex:1;'>支付方式</text>
+  <image src='../../../imgs/wechat_pay.png'></image>
+  <text style='padding-left:10rpx;'>微信支付</text>
+  <image src='../../../imgs/right.png'></image>
+</view>
+
+<view class='remarks'>
+  <text style='flex:1;'>备注</text>
+  <text>不打包</text>
+  <image src='../../../imgs/right.png'></image>
+</view>
+
+
+<view class='pay'>
+  <text>￥32</text>
+  <button>支付</button>
+</view>

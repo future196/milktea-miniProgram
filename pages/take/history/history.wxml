@@ -1,0 +1,13 @@
+<navigator url='star/star'>
+  <view style='display:flex;height:80rpx;background:white;'>
+    <text style='flex:1;color:black;margin:20rpx;'>星球会员购买记录</text>
+    <text style='font-size:25rpx;color:black;margin-top:20rpx;'>查看</text>
+    <image src='../../../imgs/right.png' style='width:20rpx;height:20rpx;padding:26rpx 30rpx 0 5rpx;'></image>
+  </view>
+</navigator>
+
+<view class='order_none'>
+  <image src='../../../imgs/take.png' mode='widthFix'></image>
+  <view>您还没有下单</view>
+  <view>快去选择一杯喜欢的茶吧</view>
+</view>

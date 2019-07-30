@@ -1,0 +1,39 @@
+<view class='header'>
+  <image class='icon' mode='widthFix' src='../../../imgs/icon.png'></image>
+  <view style='font-size:40rpx;'>想着想着就忘了</view>
+</view>
+
+<view class='info'>
+  <view class='nickname'>
+    <text style='width:140rpx;'>昵称</text>
+    <text>想着想着就忘了</text>
+  </view>
+  <view class='phone'>
+    <text style='width:140rpx;'>手机号</text>
+    <text style='flex:1'>184****6496</text>
+    <button>更换手机号</button>
+  </view>
+  <view class='sex'>
+    <text style='width:140rpx;'>性别</text>
+    <radio-group class="radio-group" bindchange="radioChange">
+      <radio value="1" name='sex' />男
+      <radio value="0" name='sex' />女
+    </radio-group>
+  </view>
+  <view class='birth'>
+    <text style='width:140rpx;'>生日</text>
+    <view class="section" style='padding:0'>
+      <picker
+        mode="date"
+        value="{{date}}"
+        start="2015-09-01"
+        end="2017-09-01"
+        bindchange="dateChange">
+        <view class="picker" style='width:100%;height:100%;padding:0'>
+          {{date}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <button class='submit'>保存</button>
+</view>

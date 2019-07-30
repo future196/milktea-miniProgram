@@ -1,0 +1,39 @@
+<view class='addr' style='height:{{search_height}}'>
+  <view style='display:flex;flex:1' wx:if="{{!search_status}}">
+    <text>广州市 番禺区</text>
+    <image style='padding-top:15rpx;' src='../../../imgs/right.png'></image>
+  </view>
+  <view class='search' bindtap='search'>
+    <image src='../../../imgs/search.png' mode='widthFix'></image>
+    <input style='width:{{search_input}}rpx' type='text' placeholder='搜索'></input>  
+  </view>
+  <text bindtap='search_cancel' wx:if="{{search_status}}">取消</text>
+</view>
+
+<view class='map' wx:if="{{!search_status}}">
+  地图
+</view>
+
+<view class='store_list' wx:if="{{!search_status}}">
+  <view class='info'>
+    <view class='name'>广州汉溪长隆GO店<text>可外送</text></view>
+    <text>距离您4.1km</text>
+    <view>广州市番禺区汉溪村汉溪商业中心汉溪中路16号</view>
+    <view>营业时间 10：00~22：00</view>
+  </view>
+  <view class='action'>
+    <navigator style='margin-top:50%;padding-left:30rpx;'>去下单</navigator>
+  </view>
+</view>
+
+<view class='store_list' wx:if="{{!search_status}}">
+  <view class='info'>
+    <view class='name'>广州汉溪长隆GO店<text>可外送</text></view>
+    <text>距离您4.1km</text>
+    <view>广州市番禺区汉溪村汉溪商业中心汉溪中路16号</view>
+    <view>营业时间 10：00~22：00</view>
+  </view>
+  <view class='action'>
+    <navigator style='margin-top:50%;padding-left:30rpx;'>去下单</navigator>
+  </view>
+</view>

@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/personal_info/personal_info",
+    "pages/mine/history/history",
+    "pages/index/store/store",
+    "pages/mine/mine",
+    "pages/index/order/order",
+    "pages/take/take",
+    "pages/take/history/history",
+    "pages/take/history/star/star"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "喜茶GO",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "点餐",
+        "iconPath": "imgs/tea.png",
+        "selectedIconPath": "imgs/tea2.png"
+      },
+      {
+        "pagePath": "pages/take/take",
+        "text": "取茶",
+        "iconPath": "imgs/take.png",
+        "selectedIconPath": "imgs/take2.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "imgs/mine.png",
+        "selectedIconPath": "imgs/mine2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
